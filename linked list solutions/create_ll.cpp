@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-struct Node{      //Creating a structure for the node and this is global variable main k andr ye local variable hota hai
+struct Node{      //Creating a structure for the node and this is global variable 
     int data;
     struct Node *next;
 };

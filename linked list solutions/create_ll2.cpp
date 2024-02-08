@@ -20,6 +20,6 @@ void main(){
 cout<<"Enter the data for second node"<<endl;
    cin>>node1->data;
    node2->next = NULL;
-
+cout<<node1->data<<""<<node2->data<<endl;   
 
 }

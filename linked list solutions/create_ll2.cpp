@@ -6,20 +6,23 @@ struct Node {
     Node* next;
 };
 
-void main(){
-     Node* head = NULL;
+int main(){
+    struct Node* node3 = NULL;
     struct Node* node1 = NULL;
     struct Node* node2 = NULL;
-    head = (struct Node*)malloc(sizeof(struct Node));
     node1 = (struct Node*)malloc(sizeof(struct Node));
     node2 = (struct Node*)malloc(sizeof(struct Node));
-   //take input in head->data from user
+    node3 = (struct Node*)malloc(sizeof(struct Node));
+   //take input in  from user
    cout<<"Enter the data for first node"<<endl;
-   cin>>head->data;
-   head->next = node2;
-cout<<"Enter the data for second node"<<endl;
    cin>>node1->data;
-   node2->next = NULL;
-cout<<node1->data<<""<<node2->data<<endl;   
+   node1->next = node1;
+cout<<"Enter the data for second node"<<endl;
+   cin>>node2->data;
+   node2->next = node2;
+   cout<<"Enter the data for third node"<<endl;
+   cin>>node3->data;
+   node3->next = NULL;
+cout<<node1->data<<" "<<node2->data<<" "<<node3->data<<endl;   
 
 }

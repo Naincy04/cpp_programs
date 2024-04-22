@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include<iostream>
 using namespace std;
 
 int array_sum(int arr[], int n){

@@ -1,16 +1,20 @@
-
-
-#include <iostream>
-#include <string>
+#include<iostream>
+#include<string>
 using namespace std;
 
-int main() {
+
+void reverse(string &input,int start, int end){
+     if (start >= end) 
+        return;
+    swap(input[start],input[end]);
+    reverse(input,start+1,end-1);
+}
+int main(){
     string input;
 
-    cout << "Enter a string: ";
-    getline(cin, input); // getline() reads the whole line, including spaces
-
-    cout << "You entered: " << input << endl;
-
-    return 0;
+    cout<<"Enter a String"<<endl;
+    getline(cin,input);
+    int n = input.length();
+    reverse(input,0,n-1);
+    cout<<"After reversing the string\n"<<input<<endl;
 }

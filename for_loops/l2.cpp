@@ -11,5 +11,5 @@ int main(){
         cout<<i<<endl;
         sum = sum + i;
     }
-    cout<<"The sum of natural numbers upto n :"<<sum<<endl;
+    cout<<"The sum of natural numbers upto n : "<<sum<<endl;
 }

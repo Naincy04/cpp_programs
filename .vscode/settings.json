@@ -3,6 +3,7 @@
     "code-runner.saveAllFilesBeforeRun": true,
     "files.associations": {
         "*.tcc": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "iostream": "cpp"
     }
 }

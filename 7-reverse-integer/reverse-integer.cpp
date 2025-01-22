@@ -1,20 +1,19 @@
 class Solution {
 public:
     int reverse(int x) {
-        int r=0;
-        int a;
-
+        int digit, num=0;
         while(x!=0)
         {
-            a=x%10;
-
-            if((r > INT_MAX/10)||(r < INT_MIN/10))
-            {
-                return 0;
+            digit = x% 10;
+          if (num > INT_MAX / 10 || (num == INT_MAX / 10 && digit > 7)) {
+                return 0; // Overflow for positive numbers
             }
-            r=r*10 + a;
-            x=x/10;
+            if (num < INT_MIN / 10 || (num == INT_MIN / 10 && digit < -8)) {
+                return 0; // Overflow for negative numbers
+            }
+            num = num * 10 + digit;
+            x = x/ 10;
         }
-        return r;
+        return num;
     }
 };
